@@ -1,0 +1,25 @@
+<header>
+    <section>
+      <h3>ToDoList</h3>
+      <input type="text" [(ngModel)]='todo' (keydown)='addTodo($event)' placeholder="添加ToDo" />
+    </section>
+</header>
+  <h3>正在进行
+      <span>{{todoList.length}}</span>
+    </h3>
+    <ol>
+      <li *ngFor="let item of todoList;let key = index" >
+        <input type="checkbox" (click)="changeTodo(key,true)">
+        
+        <span (click)="deleteTodo(key,true)">{{item.todo}}</span>
+      </li>
+    </ol>
+    <h3>已经完成
+      <span>{{doneList.length}}</span>
+    </h3>
+    <ul>
+      <li *ngFor="let item of doneList;let key = index" >
+        <input type="checkbox" (click)="changeTodo(key,false)" checked='checked'>
+        <span (click)="deleteTodo(key,false)">{{item.todo}}</span>
+      </li>
+    </ul>

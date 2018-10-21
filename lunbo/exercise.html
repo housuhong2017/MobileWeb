@@ -1,0 +1,108 @@
+<!DOCYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>河北师范大学</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var liNodes = document.getElementsByTagName("li");
+			for (var i=0; i<liNodes.length; i++)
+			{
+				liNodes[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				liNodes[i].onmouseout = function(){
+					this.className = "";
+				}
+			}
+		}
+	</script>
+	<style type="text/css">
+		/*图片浏览*/
+		.wrap{
+			width: 1200px;
+			height:397px;
+			border:5px solid #000;
+			margin: 30px auto;
+			position: relative;
+			overflow: hidden;
+			position: absolute;
+		}
+		.wrap a{
+			display: none;
+		}
+		.bottom{
+			width: 1002px;
+			height: 73px;
+			bottom: 0px;
+			left: 99px;
+			position: absolute;
+			background: url(images/bg.png);		
+		}
+		.bottom>span{
+			width: 50px;
+			height: 73px;
+			line-height: 73px;
+			text-align: center;
+			color: #fff;
+			font-size: 25px;
+			float: left;
+			cursor: pointer;
+		}
+		#next{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+            <!--图片浏览部分-->
+            
+			<div class="wrap" >
+				<a href="#" style="display:block;"><img src="images/banner_00.gif"></a>
+				<a href="#"><img src="img/banner_00.gif"/></a>
+				<a href="#"><img src="img/banner_01.jpg"/></a>
+				<a href="#"><img src="img/banner_02.jpg"/></a>
+				<a href="#"><img src="img/banner_03.jpg"/></a>
+				<a href="#"><img src="img/banner_04.jpg"/></a>
+				<a href="#"><img src="img/banner_05.jpg"/></a>
+				<a href="#"><img src="img/banner_06.jpg"/></a>
+				<a href="#"><img src="img/banner_07.jpg"/></a>
+				<div class="bottom">
+					<span id="prev"><</span>
+					<span id="next">></span>
+				</div>
+			</div>
+		
+</body>
+<script>
+	var wrap=document.getElementsByClassName('wrap')[0];
+	var imgs=wrap.getElementsByTagName('a');
+	var prev=document.getElementById('prev');
+	var next=document.getElementById('next');
+	var i=0;
+	function imgTab(){
+		imgs[i%9].style.display='none';
+		i++;
+		imgs[i%9].style.display='block';
+	}
+	var timer=setInterval(
+		imgTab,3000)
+	wrap.onmouseover=function(){
+		clearInterval(timer)
+	}
+	wrap.onmouseout=function(){
+		timer=setInterval(imgTab,3000)
+	}
+	prev.onclick=function(){
+		imgs[i%9].style.display='none';
+		i--;
+		if(i<0){
+			i=8;
+		}
+		imgs[i%9].style.display='block';
+	}
+	next.onclick=function(){
+		imgTab();
+	}
+</script>
+</html>

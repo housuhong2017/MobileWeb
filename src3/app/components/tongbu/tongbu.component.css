@@ -1,0 +1,125 @@
+.main{
+    padding-bottom: 70px;
+    padding-top: 48px;
+    height: 100%;
+    min-width: 300px;
+}
+.container{
+    
+    width: 900px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.team-index-wrap{
+    margin-top: 35px;
+    margin-left: 100px;
+}
+div{
+    outline: none;
+}
+.team-index-wrap .team-card-wrap{
+    font-size: 16px;
+    min-height: 200px;
+    background-color: #fff;
+    float: left;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    width: 32%;
+}
+.team-card{
+    position: relative;
+    z-index: 1;
+    transition: all 230ms;
+    overflow: hidden;
+    height: 244px;
+    border: 1px solid #ddd;
+}
+a{
+    color: #333;
+    text-decoration:none;
+    cursor: pointer;
+    background: transparent;
+}
+.team-card a img{
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: contain;
+}
+.team-index-wrap .team-card-wrap .team-card h1.team-card-title{
+    font-size: 1em;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #333;
+}
+.team-card-description{
+    color: #d2d2d2;
+    font-size: 0.8em;
+    padding: 0 12px;
+    margin: 0 0 20px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-height: 18px;
+}
+.team-card-state-wrap{
+    margin-bottom: 24px;
+    padding: 0 12px;
+}
+.team-card-state{
+    position: relative;
+}
+.state-group-wrap{
+    float: left;
+    font-size: 0.8em;
+}
+.state-group-wrap span.state-group{
+    margin-right: 10px;
+    color: #999;
+}
+.state-group-wrap span img{
+    width: 10px;
+    height: 10px;
+}
+.icon{
+    width: 5px;
+    height: 5px;
+}
+.apply-state-wrap{
+    position: absolute;
+    right: 0px;
+}
+.apply-btn:hover{
+    cursor: pointer;
+}
+.apply-btn{
+    width: 60px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1;
+    padding: 5px 8px 5px 6px;
+    
+}
+button img{
+    width: 5px;
+    height: 5px;
+}
+.btn-primary{
+    background-color: #ff5014;
+    border-color: #e53a00;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.container li{
+    width: 297px;
+    float: left;
+    margin-left: 3px;
+}

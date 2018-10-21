@@ -1,0 +1,72 @@
+<div class="main">
+  <div class="container workspace">
+    <div class="community row">
+      <div class="ask-list">
+        <div class="list list-condensed">
+          <section class="items items-hover">
+            <div class=" item readmore" *ngFor='let shequ of shequs' >
+              
+              <div class="item-img">
+                <img class="base-img at-popup" src="../../../assets/images/profle.png" alt="">
+              </div>
+              <a href="{{shequ.url}}">
+                <div class="item-text">
+                  <div class="item-content">
+                    <div class="media gossip-article">
+                      <div class="article-banner">
+                        <a href="">
+                          <img class="media-object" src="{{shequ.images}}" alt="">
+                        </a>
+                      </div>
+                      <div class="article-body">
+                        <a href="">
+                          <div class="article-title-icon">
+                            <img class="icon icon-file-text-o" src="" alt="">
+                          </div>
+                          <div class="article-title">
+                            {{shequ.title}}
+                          </div>
+                        </a>
+                        <div class="article-excerpt">
+                          {{shequ.text}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-footer">
+                    <span class="item-author">{{shequ.author}}</span>
+                    <span class="item-created-time">{{shequ.time}}</span>
+                    <div class="item-action pull-right">
+                      <span class="read-count">阅读{{shequ.read}}</span>
+                      <a>评论{{shequ.talk}}</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="right">
+        <div class="ask-hot" >
+          <h4>热门话题</h4>
+          <div class="list list-condensed" *ngFor='let topic of topics'>
+            <section class="items items-hover">
+              <div class="horizontal-line"></div>
+              <div class="item reply-body">
+                <span>
+                  <a href="">{{topic.title}}</a>
+                </span>
+                <span class="pull-right text-muted">
+                  {{topic.read}}
+                </span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+

@@ -1,0 +1,52 @@
+<div class="main">
+  <div class="container workspace">
+    <div class="team-index-wrap">
+      <div class="team-card-parent">
+        <div class="team-card-wrap" *ngFor="let course of courses;">
+          <div class="team-card" >
+            <a [routerLink]="['/tongbu',course.id]">
+              <img src="{{course.images}}" alt="">
+              <h1 class="team-card-title">
+                  {{course.courseName}}
+              </h1>
+              <p class="team-card-description"></p>
+              <div class="team-card-state-wrap">
+                <div class="state-group-wrap">
+                    <span class="state-group">
+                        <img src="../../../assets/images/edit-list.png" alt="">
+                        {{course.task}}
+                        <img src="../../../assets/images/profile-icon.png" alt="">
+                        {{course.person}}
+                    </span>
+                    
+                </div>
+                <div class="apply-state-wrap">
+                  <div class="apply-state joined-btn">
+                    <button class="apply-state apply-btn apply-course btn btn-primary">
+                      <b>+</b>
+                      申请
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <ul>
+      <li *ngFor="let course of courses;">
+        <a [routerLink]="['/tongbu',course.id]">
+        <img src="{{course.images}}" alt="">
+        <h3>{{course.courseName}}</h3>
+        <div>
+          <span>{{course.task}}</span>
+          <span>{{course.person}}</span>
+          <button >申请</button>
+        </div>
+        </a>
+      </li>
+    </ul> -->
+  </div>
+</div>
+

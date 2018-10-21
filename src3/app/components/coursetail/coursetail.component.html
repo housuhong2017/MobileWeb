@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="container">
+    <div class="chapter">
+      <ul class="breadcrumb">
+        <li>
+          <a href=""></a>
+          <span class="divider"></span>
+        </li>
+        <li>
+            <a href=""></a>
+            <span class="divider">{{video?.lesson1}}</span>
+        </li>
+        <li>
+            <a href=""></a>
+            <span class="divider">{{video?.lesson2}}</span>
+        </li>
+        <li>课程说明</li>
+      </ul>
+      <div class="title">
+        <h3>课程说明</h3>
+      </div>
+      <div class="video-player">
+        <div class="video">
+          <div class="embed-responsive embed-responsive-16by9">
+            <div class="video-js vjs-default-skin vjs-big-play-centered vjs-paused id_chaptervideo-dimensions vjs-controls-enabled vjs-user-inactive">
+              <video class="vjs-tech">
+                <source src="{{video?.movie}}" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

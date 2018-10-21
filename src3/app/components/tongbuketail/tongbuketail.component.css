@@ -1,0 +1,182 @@
+.main{
+    padding-bottom: 70px;
+    padding-top: 48px;
+    height: 100%;
+    min-width: 300px;
+    
+}
+div{
+    outline: none;
+}
+
+.pagehead{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ff6d3d;
+    background-color: #fafbfc;
+    border-bottom-color: #e1e4e8;
+}
+.pagehead .teamhead-details-container{
+    position: relative;
+    padding: 0;
+}
+.container{
+    max-width: 740px;
+}
+.container, .container-fluid, .container-fixed, .container-fixed-md, .container-fixed-sm, .container-fixed-xs{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pagehead h1{
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding:0 5px;
+    margin: 0.67em 0;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+    font-weight: normal;
+}
+.pagehead h1 .public-main{
+    display: inline;
+}
+.pagehead h1 a{
+    color: inherit;
+}
+.argo-center a{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.pagehead .join-team{
+    margin: 0 10px;
+    display: inline;
+}
+.btn-xs, .btn-mini{
+    padding: 1px 5px;
+}
+.btn-sm, .btn-xs, .btn-mini{
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #ff6d3d;
+    border-color: #ff5b23;
+}
+.btn{
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.pagehead nav{
+    border-bottom: none;
+}
+.nav{
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+.pagehead nav li{
+    margin-bottom: 0px;
+}
+.nav-tabs >li{
+    float: left;
+}
+.nav >li{
+    position: relative;
+    display: block;
+}
+.pagehead nav li a{
+    position: relative;
+    top: 1px;
+    font-size: 16px;
+    line-height: 18px;
+    height: 40px;
+    padding: 10px 20px;
+    color: inherit;
+    border-radius: 4px 4px 0 0;
+    transition: color 230ms;
+    margin-right: 4px;
+    border-bottom-color: transparent;
+    border-top-width: 3px;
+    border-top-color: transparent;
+}
+.nav-tabs > li > a{
+    border: 1px solid transparent;
+}
+.nav > li > a{
+    display: block;
+}
+.argo-center a{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.team-base-main{
+    padding: 20px 0;
+
+}
+.team-navbar-menu-wrap{
+    margin-bottom: 20px;
+}
+.team-navbar-menu-wrap ul{
+    float: left;
+}
+.nav-primary > li{
+    float: left;
+    margin-left: -1px;
+}
+.nav-primary > li.active > a, .nav-primary > li.active > a:hover, .nav-primary > li.active > a:focus{
+    color: #fff;
+    background-color: #ff6e3d;
+    border-color: #ff6e3d;
+}
+.nav-primary > li:last-child > a{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.nav-primary > li:first-child > a{
+    margin-left: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    text-decoration: none;
+}
+.third-nav li a{
+    padding: 5px 12px;
+}
+.nav-primary > li > a{
+    border: 1px solid #ddd;
+}
+.nav > li > a{
+    position: relative;
+    display: block;
+}
+.argo-center a{
+    outline: none;
+}
+a:focus{
+    outline-offset: -2px;
+}
+a{
+    background: transparent;
+    cursor: pointer;
+}

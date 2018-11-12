@@ -1,0 +1,53 @@
+page-contact {
+
+    img{
+        width: 100%;
+        height: 320px;
+    }
+    .dingdan{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        .s1{
+            float: left;
+        }
+        .s2{
+            float: right;
+        }
+    }
+    ion-grid{
+        ion-row{
+            ion-col{
+                .btn{
+                    height: 125px;
+                    .btn2_logo{
+                        height: 125px;
+                    }
+                    .btn2_logo_top{
+                        height: 70px;
+                        img{
+                            width: 60px;
+                            height: 50px;
+                            margin-top:35px; 
+                        }
+                    }
+                }
+                .btn2{
+                    height: 150px;
+                    .btn2_logo{
+                        height: 150px;
+                    }
+                    .btn2_logo_top{
+                        height: 90px;
+                        img{
+                            width: 60px;
+                            height: 50px;
+                            margin-top:50px; 
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
